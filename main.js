@@ -67,6 +67,7 @@ btnDecrease.addEventListener("click", () => {
   }
   quantityCount.innerText = amt;
   // console.log(amt)
+  return;
 });
 const originPrice = 125;
 let itemQuantity = amt;
@@ -78,6 +79,7 @@ addToCartBtn.addEventListener("click", () => {
 
 // Trash Btn
 trashBtn.addEventListener("click", () => {
+  itemQuantity = 0;
   quantityCount.innerText = 0;
   cartNotification.innerText = 0;
   amt = 0;
